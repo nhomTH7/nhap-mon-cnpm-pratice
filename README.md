@@ -1,2 +1,7 @@
 # nhap-mon-cnpm-pratice
-hệ thống quản lý thư viện giúp sinh viên và giảng viên tra cứu và mượn tra tài liệu nhanh chóng, thuận tiện
+Xin chào! Đây là lần đầu tiên tôi sử dụng Git và GitHub.
+
+## Thông tin sinh viên
+
+* **Họ và tên:** Nguyễn Phương Trà
+* **Mã số sinh viên:** 24S1020079
