@@ -116,7 +116,6 @@ def menu():
         else:
             print("❗ Lựa chọn không hợp lệ! Vui lòng nhập 1-6.")
 
-# Chạy chương trình
-menu()
-# nhap-mon-cnpm-pratice
-#hệ thống quản lý thư viện giúp sinh viên và giảng viên tra cứu và mượn tra tài liệu nhanh chóng, thuận t
+
+
+
