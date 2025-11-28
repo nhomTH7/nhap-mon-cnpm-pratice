@@ -1,0 +1,48 @@
+
+# Mỗi cuốn sách có trạng thái là "Đã mượn" (Borrowed) hoặc "Có sẵn" (Available)
+kho_sach = {
+    "Sách A": "Đã mượn",
+    "Sách B": "Có sẵn",
+    "Sách C": "Đã mượn",
+    "Sách D": "Đã mượn",
+    "Sách E": "Có sẵn"
+}
+
+def tra_sach(ten_sach):
+    """
+    Hàm xử lý logic trả sách: kiểm tra tên sách và trạng thái hiện tại.
+    """
+    if ten_sach in kho_sach:
+        if kho_sach[ten_sach] == "Đã mượn":
+            # Cập nhật trạng thái sách thành "Có sẵn"
+            kho_sach[ten_sach] = "Có sẵn"
+            print(f"✅ Đã nhận lại sách '{ten_sach}'. Sách hiện đã 'Có sẵn'.")
+        else:
+            print(f"⚠️ Lỗi: Sách '{ten_sach}' hiện đang 'Có sẵn', không thể trả.")
+    else:
+        print(f"❌ Lỗi: Không tìm thấy sách '{ten_sach}' trong hệ thống thư viện.")
+
+# --- Ví dụ cách sử dụng ---
+
+print("Trạng thái kho sách ban đầu:", kho_sach)
+print("-" * 30)
+
+# 1. Trả một cuốn sách đã được mượn (thành công)
+print("Thử trả 'Sách A':")
+tra_sach("Sách A")
+
+print("-" * 30)
+
+# 2. Thử trả một cuốn sách không tồn tại (lỗi)
+print("Thử trả 'Sách F':")
+tra_sach("Sách F")
+
+print("-" * 30)
+
+# 3. Thử trả một cuốn sách đã có sẵn (lỗi)
+print("Thử trả 'Sách B':")
+tra_sach("Sách B")
+
+print("-" * 30)
+
+print("Trạng thái kho sách sau khi trả 'Sách A':", kho_sach)
