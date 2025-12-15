@@ -98,23 +98,6 @@ def menu():
         print("5. Trả sách")
         print("6. Thoát")
         
-        choice = input("Chọn chức năng (1-6): ")
-
-        if choice == "1":
-            add_book()
-        elif choice == "2":
-            show_books()
-        elif choice == "3":
-            find_book()
-        elif choice == "4":
-            borrow_book()
-        elif choice == "5":
-            return_book()
-        elif choice == "6":
-            print("Tạm biệt!")
-            break
-        else:
-            print("❗ Lựa chọn không hợp lệ! Vui lòng nhập 1-6.")
 
 # Chạy chương trình
 menu()
